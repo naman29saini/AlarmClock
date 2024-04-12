@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading h1{
+    font-family: "Jersey 15", sans-serif;
+    font-size: 45px;
 }
 body, .container, .content{
     display: flex;
@@ -10,8 +15,13 @@ body, .container, .content{
     align-items: center;
 }
 body{
-    background-color: rgba(28, 168, 196, 0.562);
-    min-height: 100vh;
+    /* background-color: rgba(28, 168, 196, 0.562); */
+    background-image: url("bgimage.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    flex-direction: column;
+    gap: 60px;
 }
 .container{
     background-color: white;
@@ -68,4 +78,15 @@ select:hover{
 }
 button:hover{
     background-color:rgba(28, 168, 196, 0.962) ;
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        width: 380px;
+    }
+    .content select{
+        width: 105px;
+        padding: 3px 10px;
+        font-size: 15px;
+    }
 }
